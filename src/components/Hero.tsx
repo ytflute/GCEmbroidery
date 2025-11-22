@@ -14,7 +14,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1720982892204-b2d4ee451dbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbWJyb2lkZXJ5JTIwZmFicmljJTIwdGV4dGlsZXxlbnwxfHx8fDE3NjM3ODU5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="/images/hero-bg.jpg"
           alt="刺繡紡織"
           className="w-full h-full object-cover"
         />

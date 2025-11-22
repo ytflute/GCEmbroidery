@@ -56,14 +56,14 @@ export function Services() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="rounded-lg overflow-hidden h-64">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1673201159941-68fcdbbb4fa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBmYWN0b3J5JTIwbWFudWZhY3R1cmluZ3xlbnwxfHx8fDE3NjM3ODU5NzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/images/service-factory.jpg"
               alt={t('services.image1.alt')}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="rounded-lg overflow-hidden h-64">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1613555793439-c50b6274176a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHRocmVhZHMlMjBzZXdpbmd8ZW58MXx8fHwxNzYzNzg1OTcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/images/service-threads.jpg"
               alt={t('services.image2.alt')}
               className="w-full h-full object-cover"
             />
