@@ -27,7 +27,7 @@ export function Hero() {
           <Sparkles className="w-12 h-12 text-yellow-400" />
         </div>
         <h1 className="mb-6">{t('hero.title')}</h1>
-        <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
+        <p className="text-6xl mb-2 text-gray-200 max-w-2xl mx-auto">
           {t('hero.subtitle')}
           <br />
           {t('hero.tagline')}
