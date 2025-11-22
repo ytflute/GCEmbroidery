@@ -1,3 +1,4 @@
+import React from "react";
 import { Award, Users, TrendingUp, Heart } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -32,7 +33,7 @@ export function Features() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="mb-4">{t('features.title')}</h2>
-          <div className="w-20 h-1 bg-yellow-500 mx-auto" />
+          <div className="w-20 h-1 bg-yellow-500 mx-auto mb-4" />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

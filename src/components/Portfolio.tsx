@@ -49,8 +49,8 @@ export function Portfolio() {
     <section className="py-20 px-6 bg-[#e8e2d5]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="mb-4 text-gray-800">{t('portfolio.title')}</h2>
-          <div className="w-20 h-1 bg-gray-700 mx-auto mb-4" />
+          <h2 className="mb-4">{t('portfolio.title')}</h2>
+          <div className="w-20 h-1 bg-yellow-500 mx-auto mb-4" />
           <p className="text-gray-600 max-w-2xl mx-auto">
             {t('portfolio.subtitle')}
           </p>
@@ -66,7 +66,7 @@ export function Portfolio() {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6 pl-[10pt]">
+              <CardContent className="pt-6 pr-6 pb-6" style={{ paddingLeft: '10pt' }}>
                 <h3 className="mb-3 text-gray-800">{project.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{project.description}</p>
               </CardContent>
