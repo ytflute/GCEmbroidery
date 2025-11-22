@@ -94,7 +94,7 @@ export function ContactForm() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* 第一欄 */}
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <Building2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.name')}</p>
@@ -102,7 +102,7 @@ export function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <Hash className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.taxId')}</p>
@@ -110,7 +110,7 @@ export function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <User className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.contact')}</p>
@@ -121,7 +121,7 @@ export function ContactForm() {
 
               {/* 第二欄 */}
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <Phone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.mobile')}</p>
@@ -131,7 +131,7 @@ export function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <Phone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.phone')}</p>
@@ -141,7 +141,7 @@ export function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <Printer className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.fax')}</p>
@@ -149,7 +149,7 @@ export function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <MessageCircle className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.line')}</p>
@@ -160,7 +160,7 @@ export function ContactForm() {
 
               {/* 第三欄 */}
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <Clock className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.hours')}</p>
@@ -170,7 +170,7 @@ export function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <MapPin className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.address')}</p>

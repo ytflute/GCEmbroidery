@@ -88,7 +88,7 @@ const translations = {
     'contact.form.error.desc': '請稍後再試，或直接來電聯繫我們。',
     
     // Footer
-    'footer.description': '專業服飾配件批發、紡織巾襪制服供應商，技術專業、品質可靠、值得信賴。',
+    'footer.description': '台南在地的電腦刺繡加工廠，提供近40年的專業刺繡產品製作服務。',
     'footer.services': '服務項目',
     'footer.contact': '聯絡資訊',
     'footer.phone': '歡迎來電洽詢',
