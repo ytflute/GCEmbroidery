@@ -36,7 +36,6 @@ export function Hero() {
         <div className="space-y-2 mb-8">
           <p className="text-xl text-white">{t('hero.service1')}</p>
           <p className="text-xl text-white">{t('hero.service2')}</p>
-          <p className="text-white">{t('hero.subtitle')}</p>
         </div>
         <Button
           size="lg"
