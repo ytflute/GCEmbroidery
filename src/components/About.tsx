@@ -1,3 +1,4 @@
+import React from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export function About() {
@@ -11,11 +12,11 @@ export function About() {
           <div className="w-20 h-1 bg-yellow-500 mx-auto" />
         </div>
 
-        <div className="space-y-6 text-gray-700">
+        <div className="space-y-6 text-gray-700 text-center">
           <p>{t('about.p1')}</p>
           <p>{t('about.p2')}</p>
           <p>{t('about.p3')}</p>
-          <p className="text-center text-yellow-700 pt-4">
+          <p className="text-yellow-700 pt-4">
             {t('about.p4')}
           </p>
         </div>
