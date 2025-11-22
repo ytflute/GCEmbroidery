@@ -66,9 +66,9 @@ export function Portfolio() {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-4">
-                <h3 className="mb-2 text-gray-800">{project.title}</h3>
-                <p className="text-sm text-gray-600">{project.description}</p>
+              <CardContent className="p-6">
+                <h3 className="mb-3 text-gray-800">{project.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{project.description}</p>
               </CardContent>
             </Card>
           ))}
