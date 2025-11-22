@@ -14,9 +14,11 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   zh: {
     // Hero
-    'hero.title': '廣承綉花實業社',
-    'hero.subtitle': '電腦刺繡加工 | 刺繡產品製作',
-    'hero.tagline': '技術專業 · 品質可靠 · 值得信賴',
+    'hero.title.main': '廣承綉花',
+    'hero.title.english': 'GUANG CHENG Embroidery',
+    'hero.service1': '電腦刺繡加工',
+    'hero.service2': '刺繡產品製作',
+    'hero.subtitle': '專業服飾配件批發 · 紡織巾襪制服',
     'hero.cta': '立即諮詢',
     
     // About
@@ -97,9 +99,11 @@ const translations = {
   },
   en: {
     // Hero
-    'hero.title': 'Guang Cheng Embroidery Industrial Co.',
-    'hero.subtitle': 'Professional Apparel Accessories Wholesale, Textile & Uniform Supplier',
-    'hero.tagline': 'Professional Technology · Reliable Quality · Trustworthy',
+    'hero.title.main': 'Guang Cheng Embroidery',
+    'hero.title.english': 'GUANG CHENG Embroidery',
+    'hero.service1': 'Computer Embroidery Processing',
+    'hero.service2': 'Embroidery Product Manufacturing',
+    'hero.subtitle': 'Professional Apparel Accessories Wholesale · Textiles & Uniforms',
     'hero.cta': 'Contact Us',
     
     // About
