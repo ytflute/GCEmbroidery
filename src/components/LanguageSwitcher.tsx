@@ -12,6 +12,10 @@ import { useLanguage } from '../contexts/LanguageContext';
 export function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
 
+  const handleLanguageChange = (lang: 'zh' | 'en') => {
+    setLanguage(lang);
+  };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -26,13 +30,19 @@ export function LanguageSwitcher() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
-          onClick={() => setLanguage('zh')}
+          onSelect={(e) => {
+            e.preventDefault();
+            handleLanguageChange('zh');
+          }}
           className={language === 'zh' ? 'bg-yellow-50' : ''}
         >
           中文
         </DropdownMenuItem>
         <DropdownMenuItem
-          onClick={() => setLanguage('en')}
+          onSelect={(e) => {
+            e.preventDefault();
+            handleLanguageChange('en');
+          }}
           className={language === 'en' ? 'bg-yellow-50' : ''}
         >
           English
