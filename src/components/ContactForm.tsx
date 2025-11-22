@@ -165,8 +165,8 @@ export function ContactForm() {
                   <div>
                     <p className="text-sm text-gray-600">{t('contact.company.hours')}</p>
                     <p className="text-sm text-gray-800">{t('contact.company.hours.detail')}</p>
-                    <p className="text-sm text-gray-600">{t('contact.company.hours.weekend')}</p>
-                    <p className="text-sm text-gray-600">{t('contact.company.hours.holiday')}</p>
+                    <p className="text-sm text-gray-800">{t('contact.company.hours.weekend')}</p>
+                    <p className="text-sm text-gray-800">{t('contact.company.hours.holiday')}</p>
                   </div>
                 </div>
 
