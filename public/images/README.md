@@ -26,6 +26,21 @@
 - **建議尺寸：** 1080x720 或更大
 - **建議格式：** JPG, PNG, WebP
 
+### 3. Portfolio 區塊圖片（相關實績）
+
+Portfolio 區塊需要 6 張圖片，用於展示作品案例：
+
+- **檔案名稱：** 
+  - `portfolio-1.jpg` - 企業制服LOGO刺繡
+  - `portfolio-2.jpg` - 客製化刺繡布章
+  - `portfolio-3.jpg` - POLO衫電腦刺繡
+  - `portfolio-4.jpg` - 帽子刺繡加工
+  - `portfolio-5.jpg` - 毛巾織品刺繡
+  - `portfolio-6.jpg` - 多色漸層刺繡設計
+- **用途：** 相關實績區塊的作品展示
+- **建議尺寸：** 800x600 或更大（4:3 比例）
+- **建議格式：** JPG, PNG, WebP
+
 ## 如何添加圖片
 
 1. 準備您的圖片檔案
@@ -39,6 +54,12 @@
 - `public/images/hero-bg.jpg` → `/images/hero-bg.jpg`
 - `public/images/service-factory.jpg` → `/images/service-factory.jpg`
 - `public/images/service-threads.jpg` → `/images/service-threads.jpg`
+- `public/images/portfolio-1.jpg` → `/images/portfolio-1.jpg`
+- `public/images/portfolio-2.jpg` → `/images/portfolio-2.jpg`
+- `public/images/portfolio-3.jpg` → `/images/portfolio-3.jpg`
+- `public/images/portfolio-4.jpg` → `/images/portfolio-4.jpg`
+- `public/images/portfolio-5.jpg` → `/images/portfolio-5.jpg`
+- `public/images/portfolio-6.jpg` → `/images/portfolio-6.jpg`
 
 ## 圖片優化建議
 

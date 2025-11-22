@@ -50,6 +50,22 @@ const translations = {
     'features.service.title': '愛心綉花',
     'features.service.desc': '綉花人對綉花的熱情，是廣承綉花的最大動力',
     
+    // Portfolio
+    'portfolio.title': '相關實績',
+    'portfolio.subtitle': '多年專業經驗，服務眾多企業客戶，以下為部分作品展示',
+    'portfolio.project1.title': '企業制服LOGO刺繡',
+    'portfolio.project1.description': '為知名企業客戶製作制服胸標刺繡，精準呈現品牌識別，耐洗耐用，深獲客戶好評。',
+    'portfolio.project2.title': '客製化刺繡布章',
+    'portfolio.project2.description': '各式圖案布章刺繡製作，可應用於外套、背包等產品，色彩鮮豔、立體飽滿。',
+    'portfolio.project3.title': 'POLO衫電腦刺繡',
+    'portfolio.project3.description': '高品質POLO衫刺繡加工，適合企業團體訂製，線條細緻、質感優異。',
+    'portfolio.project4.title': '帽子刺繡加工',
+    'portfolio.project4.description': '棒球帽、鴨舌帽等各式帽款刺繡，精準定位、針腳工整，適合品牌推廣使用。',
+    'portfolio.project5.title': '毛巾織品刺繡',
+    'portfolio.project5.description': '浴巾、毛巾等織品刺繡加工，可客製化圖案文字，適合飯店、SPA等業者使用。',
+    'portfolio.project6.title': '多色漸層刺繡設計',
+    'portfolio.project6.description': '複雜圖案多色刺繡製作，色彩層次豐富、圖案細節完整，展現專業刺繡工藝。',
+    
     // Contact
     'contact.title': '聯絡我們',
     'contact.subtitle': '歡迎填寫詢價表單，我們將盡快為您服務',
@@ -134,6 +150,22 @@ const translations = {
     'features.growth.desc': 'Continuous improvement, maintaining leadership in technology and service',
     'features.service.title': 'Dedicated Service',
     'features.service.desc': 'Customer first, providing the best service experience',
+    
+    // Portfolio
+    'portfolio.title': 'Portfolio',
+    'portfolio.subtitle': 'Years of professional experience, serving numerous corporate clients, below are some of our work showcases',
+    'portfolio.project1.title': 'Corporate Uniform Logo Embroidery',
+    'portfolio.project1.description': 'Creating uniform chest badge embroidery for well-known corporate clients, accurately presenting brand identity, wash-resistant and durable, highly praised by customers.',
+    'portfolio.project2.title': 'Custom Embroidery Patches',
+    'portfolio.project2.description': 'Various pattern patch embroidery production, applicable to jackets, backpacks and other products, with vibrant colors and full three-dimensional effect.',
+    'portfolio.project3.title': 'Polo Shirt Computer Embroidery',
+    'portfolio.project3.description': 'High-quality polo shirt embroidery processing, suitable for corporate group customization, with fine lines and excellent texture.',
+    'portfolio.project4.title': 'Cap Embroidery Processing',
+    'portfolio.project4.description': 'Baseball caps, visors and other cap embroidery, precise positioning, neat stitches, suitable for brand promotion.',
+    'portfolio.project5.title': 'Towel Textile Embroidery',
+    'portfolio.project5.description': 'Bath towels, towels and other textile embroidery processing, customizable patterns and text, suitable for hotels, spas and other businesses.',
+    'portfolio.project6.title': 'Multi-color Gradient Embroidery Design',
+    'portfolio.project6.description': 'Complex pattern multi-color embroidery production, rich color layers, complete pattern details, showcasing professional embroidery craftsmanship.',
     
     // Contact
     'contact.title': 'Contact Us',
