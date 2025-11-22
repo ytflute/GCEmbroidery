@@ -45,7 +45,7 @@ export function ContactForm() {
     const bodyEncoded = encodeURIComponent(body);
     
     // 您的 email 地址（請修改為您的實際 email）
-    const recipientEmail = 'your-email@example.com'; // 請修改這裡為您的 email
+    const recipientEmail = 'abc2980327@yahoo.com.tw'; // 請修改這裡為您的 email
     
     // 生成 mailto 連結
     const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${bodyEncoded}`;
