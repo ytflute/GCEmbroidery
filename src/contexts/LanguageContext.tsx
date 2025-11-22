@@ -18,7 +18,6 @@ const translations = {
     'hero.title.english': 'GUANG CHENG Embroidery',
     'hero.service1': '電腦刺繡加工',
     'hero.service2': '刺繡產品製作',
-    'hero.subtitle': '專業服飾配件批發 · 紡織巾襪制服',
     'hero.cta': '立即諮詢',
     
     // About

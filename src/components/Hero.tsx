@@ -41,7 +41,7 @@ export function Hero() {
         <Button
           size="lg"
           onClick={scrollToContact}
-          className="bg-gray-800 hover:bg-gray-700 text-white border-2 border-gray-800"
+          className="bg-gray-800 hover:bg-gray-700 text-white border-2 border-white"
         >
           {t('hero.cta')}
         </Button>
