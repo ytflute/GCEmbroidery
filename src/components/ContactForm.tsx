@@ -100,35 +100,35 @@ export function ContactForm() {
         </div>
 
         {/* 公司資訊 - 三欄布局 */}
-        <Card className="border-2 mb-8">
-          <CardHeader>
+        <Card className="border-2 border-gray-300 mb-8 bg-[#f5f2ed]">
+          <CardHeader className="bg-gray-800 text-white">
             <CardTitle>{t('contact.company.title')}</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="pt-6">
             <div className="grid md:grid-cols-3 gap-8">
               {/* 第一欄 */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Building2 className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <Building2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.name')}</p>
-                    <p>廣承綉花實業社</p>
+                    <p className="text-gray-800">廣承綉花實業社</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Hash className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <Hash className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.taxId')}</p>
-                    <p>56955631</p>
+                    <p className="text-gray-800">56955631</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <User className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <User className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.contact')}</p>
-                    <p>黃清軒</p>
+                    <p className="text-gray-800">黃清軒</p>
                   </div>
                 </div>
               </div>
@@ -136,38 +136,38 @@ export function ContactForm() {
               {/* 第二欄 */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.mobile')}</p>
-                    <a href="tel:0939208003" className="text-yellow-700 hover:text-yellow-800">
+                    <a href="tel:0939208003" className="text-gray-800 hover:text-gray-600">
                       0939-208-003
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.phone')}</p>
-                    <a href="tel:063580355" className="text-yellow-700 hover:text-yellow-800">
+                    <a href="tel:063580355" className="text-gray-800 hover:text-gray-600">
                       06-3580355
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Printer className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <Printer className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.fax')}</p>
-                    <p>06-3580363</p>
+                    <p className="text-gray-800">06-3580363</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <MessageCircle className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <MessageCircle className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.line')}</p>
-                    <p>0939208003</p>
+                    <p className="text-gray-800">0939208003</p>
                   </div>
                 </div>
               </div>
@@ -175,20 +175,20 @@ export function ContactForm() {
               {/* 第三欄 */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <Clock className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.hours')}</p>
-                    <p className="text-sm">{t('contact.company.hours.detail')}</p>
+                    <p className="text-sm text-gray-800">{t('contact.company.hours.detail')}</p>
                     <p className="text-sm text-gray-600">{t('contact.company.hours.weekend')}</p>
                     <p className="text-sm text-gray-600">{t('contact.company.hours.holiday')}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500">{t('contact.company.address')}</p>
-                    <p>台南市中西區中和街208號</p>
+                    <p className="text-gray-800">台南市中西區中和街208號</p>
                   </div>
                 </div>
               </div>
