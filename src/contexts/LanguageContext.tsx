@@ -22,6 +22,7 @@ const translations = {
     
     // About
     'about.title': '廣承綉花實業社',
+    'about.subtitle': '創立於1989年，台南在地專業電腦刺繡加工工廠',
     'about.p1': '廣承綉花實業社創始於1989年（民國78年），為台南在地製作的電腦刺繡加工工廠，擁有近40年的專業刺繡產品製作經驗。',
     'about.p2': '過去曾協助大品牌（運動、內衣、服飾、綉花鞋等）刺繡圖案加工，並樂於與在地商品開發合作，協助刺繡產品製作。',
     'about.p3': '廣承綉花由一位在地台南女人獨自建立的工廠，透過對綉花熱情的心與臺南人獨有的匠氣，樂於接洽刺繡加工合作。',
@@ -41,6 +42,7 @@ const translations = {
     
     // Features
     'features.title': '我們的優勢',
+    'features.subtitle': '專業技術、優質服務、在地製造，是廣承綉花的核心價值',
     'features.tech.title': '專業電腦刺繡技術',
     'features.tech.desc': '擁有40年以上的電腦刺繡經驗',
     'features.reputation.title': '優質口碑',
@@ -54,7 +56,7 @@ const translations = {
     'portfolio.title': '相關實績',
     'portfolio.subtitle': '多年專業經驗，服務眾多企業客戶，以下為部分作品展示',
     'portfolio.project1.title': '企業制服LOGO刺繡',
-    'portfolio.project1.description': '為知名企業客戶製作制服胸標刺繡，精準呈現品牌識別，耐洗耐用，深獲客戶好評。',
+    'portfolio.project1.description': '為企業客戶製作制服胸標刺繡，精準呈現品牌識別，耐洗耐用，深獲客戶好評。',
     'portfolio.project2.title': '客製化刺繡布章',
     'portfolio.project2.description': '各式圖案布章刺繡製作，可應用於外套、背包等產品，色彩鮮豔、立體飽滿。',
     'portfolio.project3.title': 'POLO衫電腦刺繡',
@@ -63,7 +65,7 @@ const translations = {
     'portfolio.project4.description': '棒球帽、鴨舌帽等各式帽款刺繡，精準定位、針腳工整，適合品牌推廣使用。',
     'portfolio.project5.title': '毛巾織品刺繡',
     'portfolio.project5.description': '浴巾、毛巾等織品刺繡加工，可客製化圖案文字，適合飯店、SPA等業者使用。',
-    'portfolio.project6.title': '多色漸層刺繡設計',
+    'portfolio.project6.title': '繡花鞋刺繡加工',
     'portfolio.project6.description': '複雜圖案多色刺繡製作，色彩層次豐富、圖案細節完整，展現專業刺繡工藝。',
     
     // Contact
@@ -123,6 +125,7 @@ const translations = {
     
     // About
     'about.title': 'Welcome to Guang Cheng Embroidery Industrial Co.',
+    'about.subtitle': 'Established in 1989, a professional computer embroidery processing factory in Tainan',
     'about.p1': 'We are a company specializing in apparel accessories wholesale, textiles, towels, socks, and uniforms, with a professional and reliable team. In terms of technology and service, Guang Cheng Embroidery has maintained steady growth, earning a good reputation among peers and customers.',
     'about.p2': 'If you found us online, based on our experience, you may be interested in services related to apparel accessories wholesale, textiles, towels, socks, and uniforms. We value online visitors and sincerely welcome you to browse our service introductions based on your search keywords. If you have any inquiries or questions, you can leave a message in the inquiry form, and we will reply as soon as possible, hoping to prove that Guang Cheng Embroidery is your trustworthy choice.',
     'about.p3': 'Since its establishment, Guang Cheng Embroidery Industrial Co. has accumulated rich experience in apparel accessories wholesale, textiles, towels, socks, and uniforms, including B2B and B2C. Technology and quality are the core of our business, and customer trust and excellent service are the important foundations of our lasting success. We look forward to your messages and feedback, telling us your needs.',
@@ -142,6 +145,7 @@ const translations = {
     
     // Features
     'features.title': 'Our Advantages',
+    'features.subtitle': 'Professional technology, quality service, and local manufacturing are the core values of Guang Cheng Embroidery',
     'features.tech.title': 'Professional Technology',
     'features.tech.desc': 'Rich industry experience and professional technical team',
     'features.reputation.title': 'Excellent Reputation',

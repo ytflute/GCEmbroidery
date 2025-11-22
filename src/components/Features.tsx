@@ -34,6 +34,9 @@ export function Features() {
         <div className="text-center mb-12">
           <h2 className="mb-4">{t('features.title')}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-4" />
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {t('features.subtitle')}
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

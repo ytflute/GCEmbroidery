@@ -10,6 +10,9 @@ export function About() {
         <div className="text-center mb-12">
           <h2 className="mb-4">{t('about.title')}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-4" />
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {t('about.subtitle')}
+          </p>
         </div>
 
         <div className="space-y-6 text-gray-700 text-center">
