@@ -15,39 +15,39 @@ const translations = {
   zh: {
     // Hero
     'hero.title': '廣承綉花實業社',
-    'hero.subtitle': '專業服飾配件批發、紡織巾襪制服供應商',
+    'hero.subtitle': '電腦刺繡加工 | 刺繡產品製作',
     'hero.tagline': '技術專業 · 品質可靠 · 值得信賴',
     'hero.cta': '立即諮詢',
     
     // About
-    'about.title': '歡迎光臨廣承綉花實業社',
-    'about.p1': '我們是以服飾配件批發、紡織巾襪制服為主要服務的公司，擁有專業可靠的工作團隊。在技術與服務上，廣承綉花始終保持穩定成長，同業與客戶群都有不錯的口碑。',
-    'about.p2': '如果您從網路找到我們，根據我們的經驗，您可能對服飾配件批發、紡織巾襪制服等相關服務有興趣。我們很看重網路來訪的需求者，也誠摯歡迎您依照自己的搜尋關鍵字來瀏覽我們的服務介紹，若有任何洽詢或問題，可直接在詢價表單留言，我們會盡可能在第一時間回覆，也希望能有機會向您證明廣承綉花是您值得信賴的選擇。',
-    'about.p3': '廣承綉花實業社自創業以來，在服飾配件批發、紡織巾襪制服方面已累積了相當豐富的經驗，包含B2B、B2C，技術與品質是我們的事業核心，客戶的信賴與優質的服務更是我們歷久不衰的重要根源。我們期待您的留言與指教，告訴我們您的需求。',
-    'about.p4': '廣承綉花祝福您，也感謝您的來訪。',
+    'about.title': '廣承綉花實業社',
+    'about.p1': '廣承綉花實業社創始於1989年（民國78年），為台南在地製作的電腦刺繡加工工廠，擁有近40年的專業刺繡產品製作經驗。',
+    'about.p2': '過去曾協助大品牌（運動、內衣、服飾、綉花鞋等）刺繡圖案加工，並樂於與在地商品開發合作，協助刺繡產品製作。',
+    'about.p3': '廣承綉花由一位在地台南女人獨自建立的工廠，透過對綉花熱情的心與臺南人獨有的匠氣，樂於接洽刺繡加工合作。',
+    'about.p4': '廣承綉花祝福您，也期待您的來訪。',
     
     // Services
     'services.title': '我們的服務',
-    'services.subtitle': '專注於服飾配件批發與紡織品製造，為客戶提供全方位的專業服務',
-    'services.textile.title': '紡織巾襪制服',
-    'services.textile.desc': '提供各類紡織品、毛巾、襪子及制服訂製服務，品質優良，交期準確。',
-    'services.embroidery.title': '專業綉花加工',
-    'services.embroidery.desc': '運用專業綉花技術，為您的產品增添獨特價值，精緻細膩的工藝。',
-    'services.wholesale.title': '服飾配件批發',
-    'services.wholesale.desc': '豐富的服飾配件種類，支援B2B、B2C批發需求，穩定供貨。',
+    'services.subtitle': '提供電腦刺繡打版、加工與刺繡產品製作服務',
+    'services.textile.title': '電腦刺繡打版',
+    'services.textile.desc': '專業級刺繡打版服務，能夠將您的圖案轉換為刺繡機台可讀取的格式。',
+    'services.embroidery.title': '電腦刺繡加工',
+    'services.embroidery.desc': '廣承擁有大量電腦刺繡機台，能夠進行量產型的刺繡加工。',
+    'services.wholesale.title': '刺繡產品製作',
+    'services.wholesale.desc': '廣承也樂於開發刺繡產品，提供專業的刺繡產品製作服務。',
     'services.image1.alt': '專業工廠',
     'services.image2.alt': '彩色線材',
     
     // Features
     'features.title': '我們的優勢',
-    'features.tech.title': '專業技術',
-    'features.tech.desc': '豐富的行業經驗與專業技術團隊',
+    'features.tech.title': '專業電腦刺繡技術',
+    'features.tech.desc': '擁有40年以上的電腦刺繡經驗',
     'features.reputation.title': '優質口碑',
     'features.reputation.desc': '深受同業與客戶群的信賴與好評',
-    'features.growth.title': '穩定成長',
-    'features.growth.desc': '持續進步，保持技術與服務領先',
-    'features.service.title': '用心服務',
-    'features.service.desc': '客戶至上，提供最優質的服務體驗',
+    'features.growth.title': '臺灣製造',
+    'features.growth.desc': '臺南在地工廠，臺灣本土製造',
+    'features.service.title': '愛心綉花',
+    'features.service.desc': '綉花人對綉花的熱情，是廣承綉花的最大動力',
     
     // Contact
     'contact.title': '聯絡我們',
