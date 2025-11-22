@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Loader2, Building2, Hash, User, Phone, Printer, MessageCircle, Clock, MapPin } from "lucide-react";
+import { Send, Building2, Hash, User, Phone, Printer, MessageCircle, Clock, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -17,68 +17,54 @@ export function ContactForm() {
     email: "",
     message: "",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+    // 驗證必填欄位
+    if (!formData.name || !formData.phone || !formData.message) {
+      toast.error(t('contact.form.error'), {
+        description: t('contact.form.error.desc'),
       });
-
-      let data;
-      try {
-        data = await response.json();
-      } catch (parseError) {
-        // 如果回應不是 JSON，可能是網路錯誤或伺服器錯誤
-        throw new Error(t('contact.form.error.network.desc'));
-      }
-
-      if (!response.ok) {
-        const errorMessage = data?.error || data?.details || `HTTP ${response.status}: ${response.statusText}`;
-        console.error('API Error:', {
-          status: response.status,
-          statusText: response.statusText,
-          error: errorMessage,
-          data
-        });
-        throw new Error(errorMessage);
-      }
-
-      toast.success(t('contact.form.success'), {
-        description: t('contact.form.success.desc'),
-      });
-
-      // 重置表單
-      setFormData({
-        name: "",
-        company: "",
-        phone: "",
-        email: "",
-        message: "",
-      });
-    } catch (error: any) {
-      console.error('Error sending email:', error);
-      
-      // 檢查是否為網路錯誤
-      if (error.name === 'TypeError' && error.message.includes('fetch')) {
-        toast.error(t('contact.form.error.network'), {
-          description: t('contact.form.error.network.desc'),
-        });
-      } else {
-        toast.error(t('contact.form.error'), {
-          description: error.message || t('contact.form.error.desc'),
-        });
-      }
-    } finally {
-      setIsSubmitting(false);
+      return;
     }
+
+    // 構建郵件內容
+    const subject = encodeURIComponent(`【廣承綉花實業社】新的詢價表單 - ${formData.name}`);
+    
+    let body = `姓名：${formData.name}\n`;
+    if (formData.company) {
+      body += `公司名稱：${formData.company}\n`;
+    }
+    body += `聯絡電話：${formData.phone}\n`;
+    if (formData.email) {
+      body += `電子郵件：${formData.email}\n`;
+    }
+    body += `\n需求說明：\n${formData.message}`;
+    
+    const bodyEncoded = encodeURIComponent(body);
+    
+    // 您的 email 地址（請修改為您的實際 email）
+    const recipientEmail = 'your-email@example.com'; // 請修改這裡為您的 email
+    
+    // 生成 mailto 連結
+    const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${bodyEncoded}`;
+    
+    // 打開郵件客戶端
+    window.location.href = mailtoLink;
+    
+    toast.success(t('contact.form.success'), {
+      description: '郵件客戶端已開啟，請確認並發送郵件。',
+    });
+
+    // 重置表單
+    setFormData({
+      name: "",
+      company: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -273,20 +259,10 @@ export function ContactForm() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={isSubmitting}
+                className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900"
               >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                    {t('contact.form.submitting')}
-                  </>
-                ) : (
-                  <>
-                    <Send className="w-5 h-5 mr-2" />
-                    {t('contact.form.submit')}
-                  </>
-                )}
+                <Send className="w-5 h-5 mr-2" />
+                {t('contact.form.submit')}
               </Button>
             </form>
           </CardContent>
