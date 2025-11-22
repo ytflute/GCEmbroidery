@@ -1,23 +1,26 @@
 import { Shirt, Scissors, Package } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function Services() {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: Shirt,
-      title: "紡織巾襪制服",
-      description: "提供各類紡織品、毛巾、襪子及制服訂製服務，品質優良，交期準確。",
+      title: t('services.textile.title'),
+      description: t('services.textile.desc'),
     },
     {
       icon: Scissors,
-      title: "專業綉花加工",
-      description: "運用專業綉花技術，為您的產品增添獨特價值，精緻細膩的工藝。",
+      title: t('services.embroidery.title'),
+      description: t('services.embroidery.desc'),
     },
     {
       icon: Package,
-      title: "服飾配件批發",
-      description: "豐富的服飾配件種類，支援B2B、B2C批發需求，穩定供貨。",
+      title: t('services.wholesale.title'),
+      description: t('services.wholesale.desc'),
     },
   ];
 
@@ -25,10 +28,10 @@ export function Services() {
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="mb-4">我們的服務</h2>
+          <h2 className="mb-4">{t('services.title')}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-4" />
           <p className="text-gray-600 max-w-2xl mx-auto">
-            專注於服飾配件批發與紡織品製造，為客戶提供全方位的專業服務
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -54,14 +57,14 @@ export function Services() {
           <div className="rounded-lg overflow-hidden h-64">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1673201159941-68fcdbbb4fa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBmYWN0b3J5JTIwbWFudWZhY3R1cmluZ3xlbnwxfHx8fDE3NjM3ODU5NzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="專業工廠"
+              alt={t('services.image1.alt')}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="rounded-lg overflow-hidden h-64">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1613555793439-c50b6274176a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHRocmVhZHMlMjBzZXdpbmd8ZW58MXx8fHwxNzYzNzg1OTcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="彩色線材"
+              alt={t('services.image2.alt')}
               className="w-full h-full object-cover"
             />
           </div>

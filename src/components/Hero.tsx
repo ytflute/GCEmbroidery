@@ -1,8 +1,10 @@
 import { Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function Hero() {
+  const { t } = useLanguage();
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -24,18 +26,18 @@ export function Hero() {
         <div className="flex items-center justify-center mb-6">
           <Sparkles className="w-12 h-12 text-yellow-400" />
         </div>
-        <h1 className="mb-6">廣承綉花實業社</h1>
+        <h1 className="mb-6">{t('hero.title')}</h1>
         <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-          專業服飾配件批發、紡織巾襪制服供應商
+          {t('hero.subtitle')}
           <br />
-          技術專業 · 品質可靠 · 值得信賴
+          {t('hero.tagline')}
         </p>
         <Button
           size="lg"
           onClick={scrollToContact}
           className="bg-yellow-500 hover:bg-yellow-600 text-gray-900"
         >
-          立即諮詢
+          {t('hero.cta')}
         </Button>
       </div>
     </div>

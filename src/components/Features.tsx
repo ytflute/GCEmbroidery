@@ -1,26 +1,29 @@
 import { Award, Users, TrendingUp, Heart } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export function Features() {
+  const { t } = useLanguage();
+  
   const features = [
     {
       icon: Award,
-      title: "專業技術",
-      description: "豐富的行業經驗與專業技術團隊",
+      title: t('features.tech.title'),
+      description: t('features.tech.desc'),
     },
     {
       icon: Users,
-      title: "優質口碑",
-      description: "深受同業與客戶群的信賴與好評",
+      title: t('features.reputation.title'),
+      description: t('features.reputation.desc'),
     },
     {
       icon: TrendingUp,
-      title: "穩定成長",
-      description: "持續進步，保持技術與服務領先",
+      title: t('features.growth.title'),
+      description: t('features.growth.desc'),
     },
     {
       icon: Heart,
-      title: "用心服務",
-      description: "客戶至上，提供最優質的服務體驗",
+      title: t('features.service.title'),
+      description: t('features.service.desc'),
     },
   ];
 
@@ -28,7 +31,7 @@ export function Features() {
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="mb-4">我們的優勢</h2>
+          <h2 className="mb-4">{t('features.title')}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto" />
         </div>
 
