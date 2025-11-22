@@ -20,20 +20,23 @@ export function Hero() {
         />
       </div>
 
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 z-0 bg-black/50" />
+
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="mb-8">
-          <h1 className="text-6xl mb-2 text-gray-800" style={{ letterSpacing: '0.2em' }}>
+          <h1 className="mb-2 text-white" style={{ fontSize: '20pt', letterSpacing: '0.2em' }}>
             {t('hero.title.main')}
           </h1>
-          <p className="text-xl text-gray-700 tracking-widest">
+          <p className="text-xl text-white tracking-widest">
             {t('hero.title.english')}
           </p>
         </div>
         <div className="space-y-2 mb-8">
-          <p className="text-xl text-gray-700">{t('hero.service1')}</p>
-          <p className="text-xl text-gray-700">{t('hero.service2')}</p>
-          <p className="text-gray-600">{t('hero.subtitle')}</p>
+          <p className="text-xl text-white">{t('hero.service1')}</p>
+          <p className="text-xl text-white">{t('hero.service2')}</p>
+          <p className="text-white">{t('hero.subtitle')}</p>
         </div>
         <Button
           size="lg"
