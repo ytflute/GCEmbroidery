@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // 只允許 POST 請求
   if (req.method !== 'POST') {
@@ -10,17 +8,47 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
+    // 檢查環境變數
+    const RESEND_API_KEY = process.env.RESEND_API_KEY;
+    const FROM_EMAIL = process.env.FROM_EMAIL || 'onboarding@resend.dev';
+    const TO_EMAIL = process.env.TO_EMAIL;
+
+    if (!RESEND_API_KEY) {
+      console.error('RESEND_API_KEY 環境變數未設定');
+      return res.status(500).json({ 
+        error: '伺服器設定錯誤', 
+        details: 'RESEND_API_KEY 環境變數未設定，請在 Vercel 專案設定中添加此環境變數。' 
+      });
+    }
+
+    if (!TO_EMAIL || TO_EMAIL === 'your-email@example.com') {
+      console.error('TO_EMAIL 環境變數未設定或使用預設值');
+      return res.status(500).json({ 
+        error: '伺服器設定錯誤', 
+        details: 'TO_EMAIL 環境變數未設定，請在 Vercel 專案設定中添加您的 email 地址。' 
+      });
+    }
+
     const { name, company, phone, email, message } = req.body;
 
     // 驗證必填欄位
     if (!name || !phone || !message) {
-      return res.status(400).json({ error: '缺少必填欄位' });
+      return res.status(400).json({ error: '缺少必填欄位', details: '請確認姓名、電話和需求說明都已填寫。' });
     }
+
+    // 初始化 Resend
+    const resend = new Resend(RESEND_API_KEY);
+
+    console.log('準備發送郵件:', {
+      from: FROM_EMAIL,
+      to: TO_EMAIL,
+      subject: `【廣承綉花實業社】新的詢價表單 - ${name}`
+    });
 
     // 發送 email
     const { data, error } = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'onboarding@resend.dev',
-      to: process.env.TO_EMAIL || 'your-email@example.com',
+      from: FROM_EMAIL,
+      to: TO_EMAIL,
       subject: `【廣承綉花實業社】新的詢價表單 - ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -66,9 +94,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
 
     if (error) {
-      console.error('Resend error:', error);
-      return res.status(500).json({ error: '發送郵件失敗', details: error });
+      console.error('Resend API 錯誤:', JSON.stringify(error, null, 2));
+      return res.status(500).json({ 
+        error: '發送郵件失敗', 
+        details: error.message || 'Resend API 返回錯誤',
+        resendError: error
+      });
     }
+
+    console.log('郵件發送成功:', data);
 
     return res.status(200).json({ 
       success: true, 
@@ -76,10 +110,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       data 
     });
   } catch (error: any) {
-    console.error('API error:', error);
+    console.error('API 執行錯誤:', error);
+    console.error('錯誤堆疊:', error.stack);
     return res.status(500).json({ 
       error: '伺服器錯誤', 
-      details: error.message 
+      details: error.message || '未知錯誤',
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }

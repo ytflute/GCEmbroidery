@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Loader2 } from "lucide-react";
+import { Send, Loader2, Building2, Hash, User, Phone, Printer, MessageCircle, Clock, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -30,10 +30,23 @@ export function ContactForm() {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      let data;
+      try {
+        data = await response.json();
+      } catch (parseError) {
+        // 如果回應不是 JSON，可能是網路錯誤或伺服器錯誤
+        throw new Error('伺服器回應格式錯誤，請檢查網路連線或稍後再試');
+      }
 
       if (!response.ok) {
-        throw new Error(data.error || '發送失敗');
+        const errorMessage = data?.error || data?.details || `HTTP ${response.status}: ${response.statusText}`;
+        console.error('API Error:', {
+          status: response.status,
+          statusText: response.statusText,
+          error: errorMessage,
+          data
+        });
+        throw new Error(errorMessage);
       }
 
       toast.success("感謝您的詢價！我們會盡快與您聯繫。", {
@@ -50,9 +63,17 @@ export function ContactForm() {
       });
     } catch (error: any) {
       console.error('Error sending email:', error);
-      toast.error("發送失敗", {
-        description: error.message || "請稍後再試，或直接來電聯繫我們。",
-      });
+      
+      // 檢查是否為網路錯誤
+      if (error.name === 'TypeError' && error.message.includes('fetch')) {
+        toast.error("網路連線錯誤", {
+          description: "無法連接到伺服器，請檢查您的網路連線後再試。",
+        });
+      } else {
+        toast.error("發送失敗", {
+          description: error.message || "請稍後再試，或直接來電聯繫我們。",
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -75,6 +96,103 @@ export function ContactForm() {
             歡迎填寫詢價表單，我們將盡快為您服務
           </p>
         </div>
+
+        {/* 公司資訊 - 三欄布局 */}
+        <Card className="border-2 mb-8">
+          <CardHeader>
+            <CardTitle>公司資訊</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* 第一欄 */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Building2 className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">公司名稱</p>
+                    <p>廣承綉花實業社</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Hash className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">統一編號</p>
+                    <p>56955631</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <User className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">聯絡人</p>
+                    <p>黃清軒</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 第二欄 */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">手機</p>
+                    <a href="tel:0939208003" className="text-yellow-700 hover:text-yellow-800">
+                      0939-208-003
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">電話</p>
+                    <a href="tel:063580355" className="text-yellow-700 hover:text-yellow-800">
+                      06-3580355
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Printer className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">傳真</p>
+                    <p>06-3580363</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <MessageCircle className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">詢價 Line ID</p>
+                    <p>0939208003</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 第三欄 */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Clock className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">服務時間</p>
+                    <p className="text-sm">07:00 AM ~ 19:00 PM</p>
+                    <p className="text-sm text-gray-600">每週六、日公休</p>
+                    <p className="text-sm text-gray-600">農曆除夕至初五休息</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-gray-500">公司地址</p>
+                    <p>台南市中西區中和街208號</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         <Card className="border-2">
           <CardHeader>
