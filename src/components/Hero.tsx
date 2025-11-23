@@ -36,7 +36,7 @@ export function Hero() {
           size="lg"
           variant="outline"
           onClick={scrollToContact}
-          className="bg-gray-800 hover:bg-yellow-500 text-white border-2 border-white hover:border-yellow-500"
+          className="bg-gray-800 hover:bg-yellow-500 text-white hover:text-gray-800 border-2 border-white hover:border-yellow-500"
           style={{ borderColor: 'white', borderWidth: '2px' }}
         >
           {t('hero.cta')}
