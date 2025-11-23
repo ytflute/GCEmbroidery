@@ -1,16 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <title>廣承綉花實業社官網</title>
-    </head>
+    <!-- 網站標題（會顯示在 Google 搜尋結果的藍字） -->
+    <title>廣承綉花實業社｜刺繡加工・客製刺繡・台灣刺繡廠</title>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- 搜尋結果摘要（超重要） -->
+    <meta
+      name="description"
+      content="廣承綉花實業社提供專業刺繡加工與客製刺繡服務，涵蓋服飾、布章、企業識別與各式材料。台灣在地製作、品質穩定、交期可靠。"
+    />
+
+    <!-- 讓 Google 知道可索引 -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- 網站 icon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Canonical：避免重複網址（Vercel 常見） -->
+    <link rel="canonical" href="https://gcembroidery-taiwan.vercel.app/" />
+
+    <!-- Open Graph：FB/LINE/IG 分享用 -->
+    <meta property="og:title" content="廣承綉花實業社｜刺繡加工・客製刺繡" />
+    <meta
+      property="og:description"
+      content="台灣在地刺繡廠，提供刺繡加工、客製布章、企業識別刺繡等服務。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcembroidery-taiwan.vercel.app/" />
+    <meta property="og:image" content="https://gcembroidery-taiwan.vercel.app/og-image.jpg" />
+
+    <!-- Twitter Card（可有可無，但建議放） -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- 結構化資料：讓 Google 更懂你是公司/品牌 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "廣承綉花實業社",
+        "url": "https://gcembroidery-taiwan.vercel.app/",
+        "logo": "https://gcembroidery-taiwan.vercel.app/favicon.svg"
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
