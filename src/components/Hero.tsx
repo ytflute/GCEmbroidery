@@ -29,7 +29,8 @@ export function Hero() {
           <ImageWithFallback
             src="/images/title.png"
             alt="廣承綉花實業社"
-            className="mx-auto max-w-xs max-h-48 w-auto h-auto object-contain"
+            className="mx-auto"
+            style={{ transform: 'scale(0.6)', transformOrigin: 'center' }}
           />
         </div>
         <Button
