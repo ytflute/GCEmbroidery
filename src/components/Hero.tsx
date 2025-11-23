@@ -26,16 +26,11 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="mb-8">
-          <h1 className="mb-2 text-white" style={{ fontSize: '20pt', letterSpacing: '0.2em' }}>
-            {t('hero.title.main')}
-          </h1>
-          <p className="text-xl text-white tracking-widest">
-            {t('hero.title.english')}
-          </p>
-        </div>
-        <div className="space-y-2 mb-8">
-          <p className="text-xl text-white">{t('hero.service1')}</p>
-          <p className="text-xl text-white">{t('hero.service2')}</p>
+          <ImageWithFallback
+            src="/images/title.png"
+            alt="廣承綉花實業社"
+            className="mx-auto max-w-full h-auto"
+          />
         </div>
         <Button
           size="lg"
