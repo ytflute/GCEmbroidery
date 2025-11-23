@@ -1,5 +1,5 @@
 import React from "react";
-import { Award, Users, TrendingUp, Heart } from "lucide-react";
+import { Award, MessageCircleHeart, MapPin, Heart } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export function Features() {
@@ -12,12 +12,12 @@ export function Features() {
       description: t('features.tech.desc'),
     },
     {
-      icon: Users,
+      icon: MessageCircleHeart,
       title: t('features.reputation.title'),
       description: t('features.reputation.desc'),
     },
     {
-      icon: TrendingUp,
+      icon: MapPin,
       title: t('features.growth.title'),
       description: t('features.growth.desc'),
     },

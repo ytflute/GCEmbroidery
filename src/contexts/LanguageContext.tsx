@@ -49,8 +49,8 @@ const translations = {
     'features.reputation.desc': '深受同業與客戶群的信賴與好評',
     'features.growth.title': '臺灣製造',
     'features.growth.desc': '臺南在地工廠，臺灣本土製造',
-    'features.service.title': '愛心綉花',
-    'features.service.desc': '綉花人對綉花的熱情，是廣承綉花的最大動力',
+    'features.service.title': '獨具匠心',
+    'features.service.desc': '綉花職人的熱情，是廣承最大的動力',
     
     // Portfolio
     'portfolio.title': '相關實績',

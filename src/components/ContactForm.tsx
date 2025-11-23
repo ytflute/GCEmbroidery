@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Building2, Hash, User, Phone, Printer, MessageCircle, Clock, MapPin } from "lucide-react";
+import { Send, Building2, Hash, User, Smartphone, PhoneCall, Printer, MessageCircle, Clock, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -122,7 +122,7 @@ export function ContactForm() {
               {/* 第二欄 */}
               <div className="space-y-4">
                 <div className="flex items-start gap-6">
-                  <Phone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
+                  <Smartphone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-600">{t('contact.company.mobile')}</p>
                     <a href="tel:0939208003" className="text-gray-800 hover:text-gray-600">
@@ -132,7 +132,7 @@ export function ContactForm() {
                 </div>
 
                 <div className="flex items-start gap-6">
-                  <Phone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
+                  <PhoneCall className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-600">{t('contact.company.phone')}</p>
                     <a href="tel:063580355" className="text-gray-800 hover:text-gray-600">
