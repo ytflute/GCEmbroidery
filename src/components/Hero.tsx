@@ -33,6 +33,9 @@ export function Hero() {
             style={{ transform: 'scale(0.7)', transformOrigin: 'center' }}
           />
         </div>
+        <p className="text-white mb-4" style={{ fontSize: '12pt' }}>
+          電腦刺繡加工 | 刺繡產品製作
+        </p>
         <Button
           size="lg"
           variant="outline"
