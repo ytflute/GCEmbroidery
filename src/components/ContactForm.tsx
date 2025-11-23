@@ -93,7 +93,7 @@ export function ContactForm() {
           <CardContent className="pt-6">
             <div className="grid md:grid-cols-3 gap-8">
               {/* 第一欄 */}
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div className="flex items-start gap-6">
                   <Building2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
@@ -120,7 +120,7 @@ export function ContactForm() {
               </div>
 
               {/* 第二欄 */}
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div className="flex items-start gap-6">
                   <Smartphone className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
@@ -159,7 +159,7 @@ export function ContactForm() {
               </div>
 
               {/* 第三欄 */}
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div className="flex items-start gap-6">
                   <Clock className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
                   <div>
