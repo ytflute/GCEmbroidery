@@ -30,7 +30,7 @@ export function Hero() {
             src="/images/title.png"
             alt="廣承綉花實業社"
             className="mx-auto"
-            style={{ transform: 'scale(0.6)', transformOrigin: 'center' }}
+            style={{ transform: 'scale(0.7)', transformOrigin: 'center' }}
           />
         </div>
         <Button
