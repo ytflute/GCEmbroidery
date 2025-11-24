@@ -63,7 +63,7 @@ export function Services() {
           </div>
           <div className="rounded-lg overflow-hidden h-64">
             <ImageWithFallback
-              src="/images/service-threads.jpg"
+              src="/images/factory.png"
               alt={t('services.image2.alt')}
               className="w-full h-full object-cover"
             />
