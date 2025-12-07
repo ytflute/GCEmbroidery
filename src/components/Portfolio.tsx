@@ -7,26 +7,21 @@ export function Portfolio() {
   const { t } = useLanguage();
   
   const projects = [
+
     {
       id: 1,
-      image: "/images/portfolio-1.jpg",
-      title: t('portfolio.project1.title'),
-      description: t('portfolio.project1.description')
-    },
-    {
-      id: 2,
       image: "/images/portfolio-2.jpg",
       title: t('portfolio.project2.title'),
       description: t('portfolio.project2.description')
     },
     {
-      id: 3,
+      id: 2,
       image: "/images/portfolio-3.jpg",
       title: t('portfolio.project3.title'),
       description: t('portfolio.project3.description')
     },
     {
-      id: 4,
+      id: 3,
       image: "/images/portfolio-4.jpg",
       title: t('portfolio.project4.title'),
       description: t('portfolio.project4.description')
