@@ -41,8 +41,8 @@ export function Portfolio() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project) => (
-            <Card key={project.id} className="overflow-hidden border-2 border-gray-300 hover:border-gray-600 transition-all hover:shadow-lg bg-white">
-              <div className="aspect-square overflow-hidden">
+            <Card key={project.id} className="overflow-hidden border-2 border-gray-300 hover:border-gray-600 transition-all hover:shadow-lg bg-white flex flex-col">
+              <div className="aspect-square overflow-hidden w-full flex-shrink-0">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
