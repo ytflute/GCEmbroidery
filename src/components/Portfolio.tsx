@@ -30,18 +30,6 @@ export function Portfolio() {
       image: "/images/portfolio-4.jpg",
       title: t('portfolio.project4.title'),
       description: t('portfolio.project4.description')
-    },
-    {
-      id: 5,
-      image: "/images/portfolio-5.jpg",
-      title: t('portfolio.project5.title'),
-      description: t('portfolio.project5.description')
-    },
-    {
-      id: 6,
-      image: "/images/portfolio-6.jpg",
-      title: t('portfolio.project6.title'),
-      description: t('portfolio.project6.description')
     }
   ];
 
