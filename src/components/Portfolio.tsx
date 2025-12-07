@@ -44,7 +44,7 @@ export function Portfolio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {projects.map((project) => (
             <Card key={project.id} className="overflow-hidden border-2 border-gray-300 hover:border-gray-600 transition-all hover:shadow-lg bg-white">
               <div className="aspect-square overflow-hidden">
